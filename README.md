@@ -22,5 +22,5 @@
 Проверка раздела соусы
 13. click_to_go_to_constructor.py
 проверка раздела конструктор
-click_through_transition_to_the_stellar _burgers_logo.py
+14 click_through_transition_to_the_stellar _burgers_logo.py
 проверка логотипа Stellar Burgers.
