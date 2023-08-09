@@ -1,0 +1,15 @@
+"//p[contains(text(),'Личный Кабинет')]"
+"//form//fieldset[1]//input").send_keys('Di.Kosti@yandex.ru')
+"//form//fieldset[2]//input").send_keys('123456')
+//button[contains(text(),'Войти')]").click()
+"//form//fieldset[1]//input") Логин
+"//form//fieldset[2]//input") Пароль
+"//form//fieldset[1]//input") Имя
+"//p[contains(text(),'Некорректный пароль')]")
+"//button[contains(text(),'Выход')]")
+"//span[contains(text(),'Булки')]")
+"//span[contains(text(),'Соусы')]")
+"//span[contains(text(),'Начинки')]")
+"//button[contains(text(),'Войти в аккаунт')]")
+"//p[contains(text(),'Конструктор')]")
+"//nav//div//a[contains(@class, 'active')]")
