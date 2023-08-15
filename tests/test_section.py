@@ -46,8 +46,9 @@ class TestSection:
         browser.find_element(*Auto.COME_PASSWORD).send_keys('123456')
         browser.find_element(*Auto.TO_COME_IN).click()
         wait_and_click_element(browser, *MainPage.STELLARBURGER)
-        wait_and_click_element(browser, *MainPage.TOPPING)
-        assert browser.current_url == 'https://stellarburgers.nomoreparties.site/'
+        browser.find_element(*MainPage.SAUCES)
+        sauces = browser.find_element(*MainPage.SAUCES)
+        assert sauces.is_displayed(), 'Выбран раздел соусы, на странице есть стеллар бургер'
 
     def test_go_to_constructor(self, browser):
         browser.get("https://stellarburgers.nomoreparties.site/")
@@ -56,5 +57,6 @@ class TestSection:
         browser.find_element(*Auto.COME_PASSWORD).send_keys('123456')
         browser.find_element(*Auto.TO_COME_IN).click()
         browser.find_element(*MainPage.CONSTRUCTOR).click()
-        wait_and_click_element(browser, *MainPage.TOPPING)
-        assert browser.current_url == 'https://stellarburgers.nomoreparties.site/'
+        browser.find_element(*MainPage.SAUCES)
+        sauces = browser.find_element(*MainPage.SAUCES)
+        assert sauces.is_displayed(), 'Выбран раздел соусы, на странице есть конструктор'

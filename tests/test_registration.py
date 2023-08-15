@@ -1,13 +1,11 @@
 from selenium import webdriver
-from locators import Auto
 from helper import wait_and_click_element
 from helper import registration, come_in
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
-import time
 from faker import Faker
+from locators import Auto
 fake = Faker()
 class TestRegistration:
     def test_not_correct_pass(self, browser):
